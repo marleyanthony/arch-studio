@@ -27,3 +27,16 @@
       @content;
    }
 }
+
+// ! reusable styles 
+@mixin button {
+   border: none;
+   padding: 2.4rem 3.2rem;
+   width: 25.2rem;
+   height: 7.2rem;
+   color: #fff;
+   background: $very-dark-blue;
+   font-size: 1.5rem;
+   font-weight: 700;
+   line-height: 2.5rem;
+}
