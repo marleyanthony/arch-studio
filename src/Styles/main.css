@@ -1,9 +1,203 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800&display=swap");
+@media (min-width: 600px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.header__nav {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .header__nav {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__nav {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 16.5rem;
+  }
+}
+
+.header__nav-wrapper {
+  padding: 3.2rem;
+}
+
+.header__nav-cta-btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  letter-spacing: 2px;
+  padding: 1.2rem 2.4rem;
+  border: none;
+  background-color: #000000;
+}
+
+.header__logo {
+  height: 7.7rem;
+  height: 3.2rem;
+}
+
+@media (min-width: 1200px) {
+  .header__logo {
+    padding-left: 16.5rem;
+  }
+}
+
+.header__nav-item {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 600px) {
+  .header__nav-item--tablet {
+    margin-right: 3.7rem;
+  }
+}
+
+.header__hamburger-btn {
+  display: block;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 4rem;
+  height: 3rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  z-index: 10;
+}
+
+@media (min-width: 1200px) {
+  .header__hamburger-btn {
+    display: none;
+  }
+}
+
+.header__hamburger-btn:focus {
+  outline: none;
+}
+
+.header__hamburger-btn--active .header__hamburger-line-1 {
+  -webkit-transform: translateY(-10px) translateX(0) rotate(45deg);
+          transform: translateY(-10px) translateX(0) rotate(45deg);
+}
+
+.header__hamburger-btn--active .header__hamburger-line-2 {
+  -webkit-transform: translateY(1px) translateX(0) rotate(-45deg);
+          transform: translateY(1px) translateX(0) rotate(-45deg);
+}
+
+.header__hamburger-line-1, .header__hamburger-line-2 {
+  background: #000000;
+  width: 30px;
+  height: 0.2rem;
+  position: absolute;
+  left: 65%;
+  margin-left: -2rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.header__hamburger-line-1 {
+  top: 70%;
+}
+
+.header__hamburger-line-2 {
+  top: 30%;
+  height: 0.15rem;
+}
+
+.header__main-nav {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header__main-nav--responsive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  padding: 6rem 0;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.header__responsive-nav-cta {
+  background-color: #000000;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  padding: 1.4rem 6.8rem;
+  margin-top: 4.1rem;
+}
+
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Spartan', sans-serif;
+  font-size: 10px;
 }
 /*# sourceMappingURL=main.css.map */
