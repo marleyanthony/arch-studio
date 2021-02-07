@@ -51,3 +51,61 @@
       background: rgba(0, 0, 0, 0.4);
    }
 }
+
+
+
+// ! welcome section
+.welcome {
+   padding: 7.2rem 3.2rem;
+
+   &__hr {
+      width: 6.5rem;
+      margin-bottom: 6.7rem;
+   }
+
+   &__heading {
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 4.8rem;
+      margin-bottom: 2.9rem;
+   }
+
+   &__text {
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 2.5rem;
+      color: $dark-grey;
+   }
+}
+
+
+
+// ! about us section
+.about-us {
+   background-image: url('/src/Assets/home/mobile/image-small-team.jpg');
+   background-size: cover;
+   height: 56rem;
+
+   &__overlay {
+      content: "";
+      position: absolute;
+      top: 145.7rem;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.4);
+      height: 56rem;
+      width: 100%;
+   }
+
+   &__heading {
+      font-size: 4.8rem;
+      font-weight: 700;
+      line-height: 4.8rem;
+      color: #fff;
+      margin-bottom: 1.5rem;
+      z-index: 12;
+   }
+}
