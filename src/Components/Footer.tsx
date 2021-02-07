@@ -17,10 +17,12 @@ const Footer = () => {
           })
         }
       </div>
-      <button className="footer__button">
-        See Our Portfolio
+      <Link to="/portfolio">
+        <button className="footer__button">
+          See Our Portfolio
         <i className="fas fa-arrow-right hero__arrow"></i>
-      </button>
+        </button>
+      </Link>
     </section>
   )
 }

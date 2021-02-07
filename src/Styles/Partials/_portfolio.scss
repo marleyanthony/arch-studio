@@ -1,0 +1,90 @@
+.portfolio {
+  padding: 3.2rem;
+
+  &__card {
+    height: 24rem;
+    width: auto;
+    margin-bottom: 2.4rem;
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  &__card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    color: #fff;
+    margin-bottom: 0.4rem;
+    z-index: 2;
+  }
+
+  &__card-date {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    color: #fff;
+    z-index: 2;
+  }
+
+  &__overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    height: 24rem;
+    width: 100%;
+  }
+
+  &__card-bg {
+    &--seraph {
+      background-image: url('/src/Assets/portfolio/mobile/image-del-sol.jpg');
+    }
+
+    &--eebox {
+      background-image: url('/src/Assets/portfolio/mobile/image-eebox.jpg');
+    }
+
+    &--federal-tower {
+      background-image: url('/src/Assets/portfolio/mobile/image-federal.jpg');
+    }
+
+    &--project-del-sol {
+      background-image: url('/src/Assets/portfolio/mobile/image-del-sol.jpg');
+    }
+
+    &--228B-tower {
+      background-image: url('/src/Assets/portfolio/mobile/image-228b.jpg');
+    }
+
+    &--edelweiss {
+      background-image: url('/src/Assets/portfolio/mobile/image-edelweiss.jpg');
+    }
+
+    &--netcry {
+      background-image: url('/src/Assets/portfolio/mobile/image-netcry.jpg');
+    }
+
+    &--hypers {
+      background-image: url('/src/Assets/portfolio/mobile/image-hypers.jpg');
+    }
+
+    &--sxiv {
+      background-image: url('/src/Assets/portfolio/mobile/image-sxiv.jpg');
+    }
+
+    &--trinity {
+      background-image: url('/src/Assets/portfolio/mobile/image-trinity.jpg');
+    }
+
+    &--paramour {
+      background-image: url('/src/Assets/portfolio/mobile/image-paramour.jpg');
+    }
+  }
+}

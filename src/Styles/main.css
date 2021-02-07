@@ -512,6 +512,102 @@
   width: 100%;
 }
 
+.portfolio {
+  padding: 3.2rem;
+}
+
+.portfolio__card {
+  height: 24rem;
+  width: auto;
+  margin-bottom: 2.4rem;
+  padding: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+.portfolio__card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  color: #fff;
+  margin-bottom: 0.4rem;
+  z-index: 2;
+}
+
+.portfolio__card-date {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  color: #fff;
+  z-index: 2;
+}
+
+.portfolio__overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  height: 24rem;
+  width: 100%;
+}
+
+.portfolio__card-bg--seraph {
+  background-image: url("/src/Assets/portfolio/mobile/image-del-sol.jpg");
+}
+
+.portfolio__card-bg--eebox {
+  background-image: url("/src/Assets/portfolio/mobile/image-eebox.jpg");
+}
+
+.portfolio__card-bg--federal-tower {
+  background-image: url("/src/Assets/portfolio/mobile/image-federal.jpg");
+}
+
+.portfolio__card-bg--project-del-sol {
+  background-image: url("/src/Assets/portfolio/mobile/image-del-sol.jpg");
+}
+
+.portfolio__card-bg--228B-tower {
+  background-image: url("/src/Assets/portfolio/mobile/image-228b.jpg");
+}
+
+.portfolio__card-bg--edelweiss {
+  background-image: url("/src/Assets/portfolio/mobile/image-edelweiss.jpg");
+}
+
+.portfolio__card-bg--netcry {
+  background-image: url("/src/Assets/portfolio/mobile/image-netcry.jpg");
+}
+
+.portfolio__card-bg--hypers {
+  background-image: url("/src/Assets/portfolio/mobile/image-hypers.jpg");
+}
+
+.portfolio__card-bg--sxiv {
+  background-image: url("/src/Assets/portfolio/mobile/image-sxiv.jpg");
+}
+
+.portfolio__card-bg--trinity {
+  background-image: url("/src/Assets/portfolio/mobile/image-trinity.jpg");
+}
+
+.portfolio__card-bg--paramour {
+  background-image: url("/src/Assets/portfolio/mobile/image-paramour.jpg");
+}
+
 * {
   padding: 0;
   margin: 0;
