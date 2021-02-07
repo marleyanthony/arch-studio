@@ -24,6 +24,10 @@ const Featured = () => {
           })
         }
       </div>
+      <button className="featured__see-more-button">
+        See All
+        <i className="fas fa-arrow-right hero__arrow"></i>
+      </button>
     </section>
   )
 }

@@ -189,4 +189,9 @@
       background-image: url('/src/Assets/portfolio/mobile/image-prototype.jpg');
     }
   }
+
+  &__see-more-button {
+    @include button;
+    width: 100%;
+  }
 }
