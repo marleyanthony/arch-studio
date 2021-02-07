@@ -249,6 +249,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 2;
 }
 
@@ -296,28 +299,56 @@
   background-image: url("/src/Assets/home/mobile/image-small-team.jpg");
   background-size: cover;
   height: 56rem;
+  position: relative;
+  z-index: 1;
 }
 
 .about-us__overlay {
   content: "";
   position: absolute;
-  top: 145.7rem;
+  top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: 1;
+  z-index: -1;
   background: rgba(0, 0, 0, 0.4);
   height: 56rem;
   width: 100%;
 }
 
 .about-us__heading {
-  font-size: 4.8rem;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 4.8rem;
   color: #fff;
   margin-bottom: 1.5rem;
-  z-index: 12;
+  z-index: -5;
+}
+
+.about-us__button {
+  border: none;
+  padding: 2.4rem 3.2rem;
+  width: 25.2rem;
+  height: 7.2rem;
+  color: #fff;
+  background: #1b1d23;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-us__content-wrapper {
+  height: 100%;
+  padding: 18rem 3.2rem;
 }
 
 * {

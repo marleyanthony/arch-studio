@@ -1,42 +1,45 @@
 @mixin mobile {
-   @media (max-width: 599px) {
-      @content;
-   }
+  @media (max-width: 599px) {
+    @content;
+  }
 }
 
 @mixin tablet-portrait {
-   @media (min-width: 600px) {
-      @content;
-   }
+  @media (min-width: 600px) {
+    @content;
+  }
 }
 
 @mixin tablet-landscape {
-   @media (min-width: 900px) {
-      @content;
-   }
+  @media (min-width: 900px) {
+    @content;
+  }
 }
 
 @mixin desktop {
-   @media (min-width: 1200px) {
-      @content;
-   }
+  @media (min-width: 1200px) {
+    @content;
+  }
 }
 
 @mixin big-desktop {
-   @media (min-width: 1800px) {
-      @content;
-   }
+  @media (min-width: 1800px) {
+    @content;
+  }
 }
 
 // ! reusable styles 
 @mixin button {
-   border: none;
-   padding: 2.4rem 3.2rem;
-   width: 25.2rem;
-   height: 7.2rem;
-   color: #fff;
-   background: $very-dark-blue;
-   font-size: 1.5rem;
-   font-weight: 700;
-   line-height: 2.5rem;
+  border: none;
+  padding: 2.4rem 3.2rem;
+  width: 25.2rem;
+  height: 7.2rem;
+  color: #fff;
+  background: $very-dark-blue;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
