@@ -120,3 +120,73 @@
     padding: 18rem 3.2rem;
   }
 }
+
+
+
+
+// ! featured section
+.featured {
+  padding: 7.2rem 3.2rem;
+
+  &__heading {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    margin-bottom: 4.8rem;
+  }
+
+  &__card {
+    height: 24rem;
+    width: auto;
+    margin-bottom: 2.4rem;
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  &__card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    color: #fff;
+    margin-bottom: 0.4rem;
+    z-index: 2;
+  }
+
+  &__view-all {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    color: #fff;
+    z-index: 2;
+  }
+
+  &__overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    height: 24rem;
+    width: 100%;
+  }
+
+  &__card-bg {
+    &--project-del-sol {
+      background-image: url('/src/Assets/portfolio/mobile/image-del-sol.jpg');
+    }
+
+    &--tower {
+      background-image: url('/src/Assets/portfolio/mobile/image-228b.jpg');
+    }
+
+    &--prototype {
+      background-image: url('/src/Assets/portfolio/mobile/image-prototype.jpg');
+    }
+  }
+}
