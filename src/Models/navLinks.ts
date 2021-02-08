@@ -1,16 +1,20 @@
 export const NavItems = [
   {
-    label: 'Portfolio',
-    link: 'portfolio'
+    label: 'Home',
+    link: '/'
   },
   {
-    label: 'About Us',
-    link: 'about'
+    label: 'Portfolio',
+    link: '/portfolio'
+  },
+  {
+    label: 'About',
+    link: '/about'
   },
   {
     label: 'Contact',
-    link: 'contact'
-  },
+    link: '/contact'
+  }
 ]
 
 
@@ -20,16 +24,16 @@ export const FooterLinks = [
     link: '/'
   },
   {
-    label: 'Stories',
-    link: '/stories'
+    label: 'Portfolio',
+    link: '/portfolio'
   },
   {
-    label: 'Features',
-    link: '/features'
+    label: 'About',
+    link: '/about'
   },
   {
-    label: 'Pricing',
-    link: '/pricing'
+    label: 'Contact',
+    link: '/contact'
   }
 ]
 
