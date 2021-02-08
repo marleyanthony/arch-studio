@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Home from './Components/Pages/Home';
 import Portfolio from './Components/Pages/Portfolio';
+import About from './Components/Pages/About';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Header />
         <Route exact path="/" component={Home} />
         <Route path="/portfolio" component={Portfolio} />
+        <Route path="/about" component={About} />
         <Footer />
       </Router>
     </div>

@@ -512,6 +512,60 @@
   width: 100%;
 }
 
+.our-heritage {
+  padding: 0 3.3rem 7.2rem;
+}
+
+.our-heritage__heading {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+  letter-spacing: -1.4;
+  margin-bottom: 2.9rem;
+}
+
+.our-heritage__heading--leaders {
+  margin: 7.2rem 0 6.4rem;
+}
+
+.our-heritage__text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  color: #60636d;
+  margin-bottom: 2rem;
+}
+
+.our-heritage__img {
+  width: 100%;
+  margin-bottom: 2.4rem;
+}
+
+.our-heritage__name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  color: #1b1d23;
+  margin-bottom: 0.4rem;
+}
+
+.our-heritage__position {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  color: #1b1d23;
+  margin-bottom: 0.8rem;
+}
+
+.our-heritage__icon-wrapper {
+  margin-bottom: 4rem;
+}
+
+.our-heritage__social-icon {
+  height: 3.2rem;
+  margin-right: 2.5rem;
+}
+
 .portfolio {
   padding: 3.2rem;
 }
@@ -606,6 +660,50 @@
 
 .portfolio__card-bg--paramour {
   background-image: url("/src/Assets/portfolio/mobile/image-paramour.jpg");
+}
+
+.about-contact {
+  position: relative;
+}
+
+.about-contact__overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  height: 24rem;
+  width: 100%;
+}
+
+.about-contact__hero-text-wrapper {
+  padding: 4rem 3.2rem;
+}
+
+.about-contact__heading-text {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+  letter-spacing: -1px;
+  margin-bottom: 1.2rem;
+}
+
+.about-contact__heading-summary {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  color: #60636d;
+  margin-bottom: 3.2rem;
+}
+
+.about-contact__hr {
+  margin-bottom: 6.8rem;
+  color: #c8ccd8;
+  width: 6.5rem;
+  margin-left: 3.3rem;
 }
 
 * {
