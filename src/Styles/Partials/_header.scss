@@ -3,13 +3,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 6.6rem;
   }
 
   &__nav {
     display: none;
 
     @include tablet-portrait {
-      display: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     @include desktop {
@@ -63,6 +66,14 @@
         margin-right: 3.7rem;
       }
     }
+
+    @include tablet-portrait {
+      text-transform: unset;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 2.5rem;
+      color: #7D828F;
+    }
   }
 
   &__hamburger-btn {
@@ -76,6 +87,10 @@
     border: none;
     background-color: transparent;
     z-index: 15;
+
+    @include tablet-portrait {
+      display: none;
+    }
 
     @include desktop {
       display: none;

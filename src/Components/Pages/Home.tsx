@@ -7,6 +7,7 @@ import { HeroContent } from '../../Models/Hero';
 const Home = () => {
   return (
     <div className="home-page">
+      <h2 className="home-page__home-graphic"><span>Home</span></h2>
       <Hero content={HeroContent} />
       <Welcome />
       <AboutUs />

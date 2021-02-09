@@ -77,9 +77,6 @@ const Header = () => {
             })
           }
         </div>
-        <a href="mailto: marleycanthony@gmail.com" className="header__nav-cta-btn">
-          <div className="header__nav-cta-btn-text">Get In Touch</div>
-        </a>
       </section>
     </div>
   )

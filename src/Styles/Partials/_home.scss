@@ -1,3 +1,49 @@
+// ! home section
+.home-page {
+  &__home-graphic {
+    display: none;
+
+    @include tablet-portrait {
+      position: absolute;
+      top: -1rem;
+      left: -5rem;
+      transform: rotate(90deg);
+      width: 20rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 2.5rem;
+      letter-spacing: 1.5rem;
+      text-transform: uppercase;
+      color: #c8ccd8;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      span {
+        background: #fff;
+        margin-left: 2rem;
+      }
+
+      &::before,
+      &::after {
+        background: #c8ccd8;
+        height: 2px;
+        flex: 1;
+        content: '';
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  @include tablet-portrait {
+    padding: 0 9.8rem;
+    position: relative;
+  }
+}
+
 // ! hero section 
 .hero {
   background-image: url('/src/Assets/home/mobile/image-hero-paramour.jpg');
@@ -8,6 +54,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  position: relative;
 
   &__heading {
     font-size: 4.8rem;
@@ -16,6 +63,11 @@
     color: #fff;
     margin-bottom: 1.5rem;
     z-index: 2;
+
+    @include tablet-portrait {
+      font-size: 8rem;
+      line-height: 8rem;
+    }
   }
 
   &__sub-heading {
@@ -43,9 +95,9 @@
   &__overlay {
     content: "";
     position: absolute;
-    top: 10rem;
+    top: 0rem;
     left: 0;
-    bottom: 15.5rem;
+    bottom: 0;
     right: 0;
     z-index: 1;
     background: rgba(0, 0, 0, 0.4);
@@ -58,9 +110,30 @@
 .welcome {
   padding: 7.2rem 3.2rem;
 
+  @include tablet-portrait {
+    padding: 7.2rem 0;
+  }
+
   &__hr {
     width: 6.5rem;
     margin-bottom: 6.7rem;
+
+    @include tablet-portrait {
+      display: none;
+    }
+  }
+
+  &__tablet-text {
+    display: none;
+
+    @include tablet-portrait {
+      display: unset;
+      font-size: 12rem;
+      font-weight: 700;
+      line-height: 20rem;
+      letter-spacing: -3px;
+      color: #EEEFF4;
+    }
   }
 
   &__heading {
@@ -68,6 +141,11 @@
     font-weight: 700;
     line-height: 4.8rem;
     margin-bottom: 2.9rem;
+
+    @include tablet-portrait {
+      margin-top: -3rem;
+      padding-right: 30rem;
+    }
   }
 
   &__text {
@@ -109,6 +187,13 @@
     color: #fff;
     margin-bottom: 1.5rem;
     z-index: -5;
+
+    @include tablet-portrait {
+      font-size: 5.6rem;
+      line-height: 5.6rem;
+      padding-right: 10rem;
+      margin-bottom: 3rem;
+    }
   }
 
   &__button {
@@ -128,11 +213,28 @@
 .featured {
   padding: 7.2rem 3.2rem;
 
+  @include tablet-portrait {
+    padding: 7.2rem 0;
+  }
+
+  &__tablet-flex-wrapper {
+    @include tablet-portrait {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 15rem 0 9rem;
+    }
+  }
+
   &__heading {
     font-size: 4rem;
     font-weight: 700;
     line-height: 4.8rem;
     margin-bottom: 4.8rem;
+
+    @include tablet-portrait {
+      margin-bottom: 0;
+    }
   }
 
   &__card {
@@ -161,6 +263,24 @@
     line-height: 2.5rem;
     color: #fff;
     z-index: 2;
+  }
+
+  &__card-number {
+    @include tablet-portrait {
+      position: absolute;
+      top: 2rem;
+      right: 0;
+      z-index: 5;
+      opacity: 50%;
+      font-family: Spartan;
+      font-size: 200px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 200px;
+      letter-spacing: -5px;
+      text-align: right;
+      color: #fff;
+    }
   }
 
   &__overlay {
@@ -193,5 +313,17 @@
   &__see-more-button {
     @include button;
     width: 100%;
+
+    &--mobile-btn {
+      @include tablet-portrait {
+        display: none;
+      }
+    }
+
+    &--tablet-btn {
+      @include tablet-portrait {
+        width: 16.9rem;
+      }
+    }
   }
 }
